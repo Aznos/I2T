@@ -14,6 +14,14 @@ def closestColor(rgb):
         (128, 0, 128): Fore.MAGENTA,
         (128, 128, 0): Fore.YELLOW,
         (192, 192, 192): Fore.WHITE,
+        (128, 128, 128): Fore.LIGHTBLACK_EX,
+        (0, 0, 255): Fore.LIGHTBLUE_EX,
+        (0, 255, 0): Fore.LIGHTGREEN_EX,
+        (0, 255, 255): Fore.LIGHTCYAN_EX,
+        (255, 0, 0): Fore.LIGHTRED_EX,
+        (255, 0, 255): Fore.LIGHTMAGENTA_EX,
+        (255, 255, 0): Fore.LIGHTYELLOW_EX,
+        (255, 255, 255): Fore.LIGHTWHITE_EX,
     }
     
     r, g, b = rgb
