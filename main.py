@@ -20,5 +20,10 @@ def closestColor(rgb):
     closestcolors = min(colors.keys(), key=lambda color: math.sqrt((color[0] - r) ** 2 + (color[1] - g) ** 2 + (color[2] - b) ** 2))
     return colors[closestcolors]
 
-testcolor = (0, 255, 0)
-print(closestColor(testcolor) + "test")
+def printImage(image):
+    for y in range(image.height):
+        for x in range(image.width):
+            rgb = image.getpixel((x, y))
+            color = closestColor(rgb)
+            print(color + "██", end="")
+        print()
