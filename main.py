@@ -27,3 +27,10 @@ def printImage(image):
             color = closestColor(rgb)
             print(color + "██", end="")
         print()
+        
+def loadAndResize(imagePath, newWidth=100):
+    with Image.open(imagePath) as img:
+        aspectRatio = img.height / img.width
+        newHeight = int(aspectRatio * newWidth)
+        resizedImg = img.resize((newWidth, newHeight))
+        return resizedImg
