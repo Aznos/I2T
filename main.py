@@ -34,3 +34,7 @@ def loadAndResize(imagePath, newWidth=100):
         newHeight = int(aspectRatio * newWidth)
         resizedImg = img.resize((newWidth, newHeight))
         return resizedImg
+    
+imagePath = "test.jpg"
+resizedImage = loadAndResize(imagePath)
+printImage(resizedImage)
